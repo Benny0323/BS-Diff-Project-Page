@@ -86,7 +86,7 @@
                 <a href="https://scholar.google.com/citations?user=e3_kWigAAAAJ&hl=en" target="_blank">Xiang Wan</a><sup>7</sup>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=47KhMXEAAAAJ&hl=en" target="_blank">Changmiao Wang</a><sup>7*</sup>,
+                <a href="https://scholar.google.com/citations?user=47KhMXEAAAAJ&hl=en" target="_blank">Changmiao Wang</a><sup>7*</sup>
               </span>
               <br>
               <div class="author-affiliations">
@@ -213,46 +213,7 @@
         <!-- Your image here -->
         <img src="static/images/frame_00.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          <b>The overview framework of our proposed BS-LDM.</b><br>
-        </h2>
-      </div>
-          </div>
-        </div>
-</div>
-</section>
-<!-- End image carousel -->
-
-<!-- Image carousel -->
-<section class="hero teaser">
-    <div class="container is-max-desktop">
-      
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <br>
-        <!-- Your image here -->
-        <img src="static/images/freq_00.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          <b>Visualization of high-frequency and low-frequency feature decomposition of latent variables before and after Gaussian noise addition using Discrete Fourier Transform. The
-results are pseudo-colored for ease of demonstration.</b><br>
-        </h2>
-      </div>
-          </div>
-        </div>
-</div>
-</section>
-<!-- End image carousel -->
-
-<!-- Image carousel -->
-<section class="hero teaser">
-    <div class="container is-max-desktop">
-      
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <br>
-        <!-- Your image here -->
-        <img src="static/images/off_00.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          <b>Illustration of the composition of offset noise.</b><br>
+          <b>The overview framework of our proposed BS-Diff.</b><br>
         </h2>
       </div>
           </div>
@@ -271,15 +232,29 @@ results are pseudo-colored for ease of demonstration.</b><br>
       </div>
     </div>
     <p>
-    🌟 A LDM-based framework for <b style="background: linear-gradient(to right, blue, violet, indigo, red, orange); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 20px;">high-resolution</b> bone suppression in CXRs, and introduce <b style="background: linear-gradient(to right, indigo, violet, red, blue, orange); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 20px;">ML-VQGAN for effective perceptual compression and detail retention</b>.<br><br>
-    🌟 Incorporate <b style="background: linear-gradient(to right, red, indigo, violet, blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 20px;">offset noise and a temporal adaptive thresholding strategy</b> to help minimize discrepancies in <b style="background: linear-gradient(to right, violet, red, indigo, blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 20px;">low-frequency information</b> and enhance the quality of generated images.<br><br>
-    🌟 Our comprehensive experiments, as well as clinical and automated downstream evaluations demonstrated <b style="background: linear-gradient(to right, red, indigo, violet, blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 20px;">excellent</b> image quality and substantial diagnostic improvements, underscoring the clinical significance of our work.
+    🌟 To the best of our knowledge, this is the pioneering study that harnesses 
+<b style="background: linear-gradient(to right, blue, violet, indigo, red, orange); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 20px; font-weight: bold;">
+diffusion models</b> for the generation of soft-tissue images from CXRs, thus addressing and overcoming the prevailing limitations of 
+<b style="background: linear-gradient(to right, red, indigo, violet, blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 20px; font-weight: bold;">
+DES</b>.<br><br>
+🌟 In our enhancement module, we introduce an innovative amalgamation of 
+<b style="background: linear-gradient(to right, violet, red, indigo, blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 20px; font-weight: bold;">
+varied loss functions</b>, devised to more effectively encapsulate 
+<b style="background: linear-gradient(to right, blue, indigo, violet, orange); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 20px; font-weight: bold;">
+spatial features</b> and intricate texture details of images, while concurrently preserving their overall structures.<br><br>
+🌟 We have also assembled the most extensive dataset since 2010, comprising 
+<b style="background: linear-gradient(to right, violet, indigo, red, blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 20px; font-weight: bold;">
+high-resolution paired images</b> from 120 patients, which were collected in collaboration with our partner hospital. We anticipate making this dataset publicly available in the near future.<br><br>
+🌟 Through comprehensive experiments, comparative analyses, ablation studies, and clinical evaluations, we substantiate the 
+<b style="background: linear-gradient(to right, violet, red, indigo, blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 20px; font-weight: bold;">
+superior performance</b> of our proposed 
+<b style="background: linear-gradient(to right, orange, red, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 20px; font-weight: bold;">
+BS-Diff model</b> in comparison to several high-performing bone suppression models.
     </p>
   </div>
 </section>
 
 
-  
 
 <!-- Image carousel -->
 <section class="hero teaser">
