@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">BS-LDM: Effective Bone Suppression in High-Resolution Chest X-Ray Images with Conditional Latent Diffusion Models</h1>
+            <h1 class="title is-1 publication-title">BS-Diff: Effective Bone Suppression Using Conditional Diffusion Models From Chest X-Ray Images</h1>
             <div class="is-size-5 publication-authors">
               <!-- 作者列表 -->
               <span class="author-block">
@@ -191,7 +191,7 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lung diseases represent a significant global health challenge, with Chest X-Ray (CXR) being a key diagnostic tool due to their accessibility and affordability. Nonetheless, the detection of pulmonary lesions is often hindered by overlapping bone structures in CXR images, leading to potential misdiagnoses. To address this issue, we developed an end-to-end framework called BS-LDM, designed to effectively suppress bone in high-resolution CXR images. This framework is based on conditional latent diffusion models and incorporates a multi-level hybrid loss-constrained vector-quantized generative adversarial network which is crafted for perceptual compression, ensuring the preservation of details. To further enhance the framework's performance, we introduce offset noise and a temporal adaptive thresholding strategy. These additions help minimize discrepancies in generating low-frequency information, thereby improving the clarity of the generated soft tissue images. Additionally, we have compiled a high-quality bone suppression dataset named SZCH-X-Rays. This dataset includes 818 pairs of high-resolution CXR and dual-energy subtraction soft tissue images collected from a partner hospital. Moreover, we processed 241 data pairs from the JSRT dataset into negative images, which are more commonly used in clinical practice. Our comprehensive experiments and downstream evaluations reveal that BS-LDM excels in bone suppression, underscoring its significant clinical value.
+            Chest X-rays (CXRs) are commonly utilized as a low-dose modality for lung screening. Nonetheless, the efficacy of CXRs is somewhat impeded, given that approximately 75% of the lung area overlaps with bone, which in turn hampers the detection and diagnosis of diseases. As a remedial measure, bone suppression techniques have been introduced. The current dual-energy subtraction imaging technique in the clinic requires costly equipment and subjects being exposed to high radiation. To circumvent these issues, deep learning-based image generation algorithms have been proposed. However, existing methods fall short in terms of producing high-quality images and capturing texture details, particularly with pulmonary vessels. To address these issues, this paper proposes a new bone suppression framework, termed BS-Diff, that comprises a conditional diffusion model equipped with a U-Net architecture and a simple enhancement module to incorporate an autoencoder. Our proposed network cannot only generate soft tissue images with a high bone suppression rate but also possesses the capability to capture fine image details. Additionally, we compiled the largest dataset since 2010, including data from 120 patients with high-definition, high-resolution paired CXRs and soft tissue images collected by our affiliated hospital. Extensive experiments, comparative analyses, ablation studies, and clinical evaluations indicate that the proposed BS-Diff outperforms several bone-suppression models across multiple metrics.
           </p>
         </div>
       </div>
@@ -345,12 +345,14 @@ results are pseudo-colored for ease of demonstration.</b><br>
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{sun2025bs,
-  title={Bs-ldm: Effective bone suppression in high-resolution chest X-ray images with conditional latent diffusion models},
-  author={Sun, Yifei and Chen, Zhanghao and Zheng, Hao and Ge, Ruiquan and Liu, Jin and Min, Wenwen and Elazab, Ahmed and Wan, Xiang and Wang, Changmiao},
-  journal={IEEE Journal of Biomedical and Health Informatics},
-  year={2025},
-  publisher={IEEE}
+      <pre><code>@inproceedings{chen2024bs,
+  title={Bs-diff: Effective bone suppression using conditional diffusion models from chest x-ray images},
+  author={Chen, Zhanghao and Sun, Yifei and Ge, Ruiquan and Qin, Wenjian and Pan, Cheng and Deng, Wenming and Liu, Zhou and Min, Wenwen and Elazab, Ahmed and Wan, Xiang and others},
+  booktitle={2024 IEEE International Symposium on Biomedical Imaging (ISBI)},
+  pages={1--5},
+  year={2024},
+  organization={IEEE}
+}
 }</code></pre>
     </div>
 </section>
